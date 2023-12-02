@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.726);
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    text-shadow: 0 2px 2px black;
+}
+
+.display {
+    margin:  auto;
+    display: grid;
+    grid-template-columns: repeat(3, 15vh);
+    grid-template-rows: repeat(3, 15vh);
+}
+
+
+
+.box {
+    width: 15vh;
+    height: 15vh;
+    border: 2px solid black;
+}
+
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(3){
+    border-top: none;
+}
+
+
+.box:nth-child(1),
+.box:nth-child(4),
+.box:nth-child(7){
+    border-left: none;
+}
+
+.box:nth-child(7),
+.box:nth-child(8),
+.box:nth-child(9){
+    border-bottom: none;
+}
+
+.box:nth-child(3),
+.box:nth-child(6),
+.box:nth-child(9){
+    border-right: none;
+}
+
+
+p{
+    background-color:rgb(15, 128, 0);
+    color: aliceblue;
+    text-shadow: 0 2px 2px black;
+    text-align:center ;
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+   
+}
+
+.box:hover{
+    background-color: rgba(62, 66, 70, 0.219);
+    cursor: pointer;
+}
+
+span{
+    font-size: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
